@@ -77,11 +77,11 @@ p {
 
 .education-title {
     font-weight: bold;
-    margin-top: 22px;
+    margin-top: 26px;
 }
 
 .education-item p {
-    line-height: 0.8;
+    line-height: 0.6;
 }
 
 hr {
