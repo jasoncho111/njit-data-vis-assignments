@@ -1,5 +1,16 @@
-p {
+body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 20px;
+    background-color: gray;
+  }
+
+.resume-container {
+    max-width: 768px;
+    margin: auto;
+    background-color: white;
+    padding: 0px;
+    box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.15);
 }
 
 .page-header {
