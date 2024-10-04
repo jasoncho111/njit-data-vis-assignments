@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jasoncho111.github.io/cs450-assignment-1",
-  "name": "assignment-1",
+  "homepage": "https://jasoncho111.github.io/njit-data-vis-assignments",
+  "name": "njit-data-vis-assignments",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
