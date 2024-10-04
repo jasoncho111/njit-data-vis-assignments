@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/cs450-assignment-1/static/js/main.31d6cfe0.js",
-    "main.css": "/cs450-assignment-1/static/css/main.3e29c49e.css",
-    "index.html": "/cs450-assignment-1/index.html",
-    "main.3e29c49e.css.map": "/cs450-assignment-1/static/css/main.3e29c49e.css.map"
+    "main.css": "/njit-data-vis-assignments/static/css/main.5e30ed0f.css",
+    "main.js": "/njit-data-vis-assignments/static/js/main.27295645.js",
+    "index.html": "/njit-data-vis-assignments/index.html",
+    "main.5e30ed0f.css.map": "/njit-data-vis-assignments/static/css/main.5e30ed0f.css.map",
+    "main.27295645.js.map": "/njit-data-vis-assignments/static/js/main.27295645.js.map"
   },
   "entrypoints": [
-    "static/js/main.31d6cfe0.js",
-    "static/css/main.3e29c49e.css"
+    "static/css/main.5e30ed0f.css",
+    "static/js/main.27295645.js"
   ]
 }
