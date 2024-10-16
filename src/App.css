@@ -1,102 +1,18 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 5px;
     padding: 20px;
-    background-color: gray;
   }
 
-.resume-container {
-    max-width: 768px;
-    margin: auto;
-    background-color: white;
-    padding: 0px;
-    box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.15);
+.c1_div, .c2_div {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.page-header {
-    background-color: #f2f2f2;
-    padding-top: 50px;
-    padding-bottom:55px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-
-    border-bottom: 6px solid #ffc000;
-
-    margin-bottom: 6px;
+.c1_title, .c2_title {
+    font-size: 30px;
 }
 
-.header-left {
-    flex-grow: 5;
-}
-
-.header-right {
-    flex-grow: 1;
-}
-
-#name, #job {
-    font-size: 24px;
-    margin: 6px;
-    line-height: 1.2;
-}
-
-.contacts {
-    font-size: 12px;
-    margin-top: 12px;
-}
-
-.section {
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-}
-
-.section p {
-    font-size: 18px;
-}
-
-.section-title {
-    font-style: italic;
-    font-weight: bold;
-    
-    flex: 1.2;
-}
-
-.section-content {
-    flex: 4;
-}
-
-.job-title {
-    font-weight: bold;
-}
-
-#key-skills {
-    display: flex;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.skill-col {
-    flex-direction: column;
-    gap: 0px;
-    margin-right: 55px;
-}
-
-.a-key-skill {
-    line-height: 0;
-}
-
-.education-title {
-    font-weight: bold;
-    margin-top: 26px;
-}
-
-.education-item p {
-    line-height: 0.6;
-}
-
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-    border-color: lightgray;
+.c1_x_axis_label, .c1_y_axis_label, .c2_x_axis_label, .c2_y_axis_label {
+    font-size: 22px;
 }
