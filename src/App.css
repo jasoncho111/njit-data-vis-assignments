@@ -1,18 +1,21 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 5px;
+* {
+    margin: 0;
+    box-sizing: border-box; /* This will ensure padding and borders are included in width */
+  }
+  
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    row-gap: 50px;
     padding: 20px;
   }
-
-.c1_div, .c2_div {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.c1_title, .c2_title {
-    font-size: 30px;
-}
-
-.c1_x_axis_label, .c1_y_axis_label, .c2_x_axis_label, .c2_y_axis_label {
-    font-size: 22px;
-}
+  
+  .child1 {
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
+  .child2 {
+    background-color: rgb(228, 228, 228);
+  }
