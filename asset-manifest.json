@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/njit-data-vis-assignments/static/css/main.56a6a87c.css",
-    "main.js": "/njit-data-vis-assignments/static/js/main.469e878c.js",
+    "main.css": "/njit-data-vis-assignments/static/css/main.0bc17906.css",
+    "main.js": "/njit-data-vis-assignments/static/js/main.7054593f.js",
     "index.html": "/njit-data-vis-assignments/index.html",
-    "main.56a6a87c.css.map": "/njit-data-vis-assignments/static/css/main.56a6a87c.css.map",
-    "main.469e878c.js.map": "/njit-data-vis-assignments/static/js/main.469e878c.js.map"
+    "main.0bc17906.css.map": "/njit-data-vis-assignments/static/css/main.0bc17906.css.map",
+    "main.7054593f.js.map": "/njit-data-vis-assignments/static/js/main.7054593f.js.map"
   },
   "entrypoints": [
-    "static/css/main.56a6a87c.css",
-    "static/js/main.469e878c.js"
+    "static/css/main.0bc17906.css",
+    "static/js/main.7054593f.js"
   ]
 }
