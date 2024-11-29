@@ -1,44 +1,9 @@
-.child1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-}
-
-#inputs_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.radio_div {
-    display: flex;
-}
-
-.company_radio_div {
-    flex: left;
-    margin-right: 12px;
-}
-
-.company_radio_btn {
-    margin-right: 3px;
-}
-
-.radio_div, .dropdown_div {
-    margin-top: 12px;
-}
-
-.svg_div {
-    margin-top: 18px;
-    padding-top: 4px;
-}
 
 div.tooltip {
     position: absolute;
     padding: 5px;
     font: 12px sans-serif;
-    color: lightgray;
-    background: rgb(0, 0, 0);
+    background: #eaeaea;
     border: 0px;
     border-radius: 3px;
     pointer-events: none
