@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import FileUpload from "./FileUpload";
-import Child1 from "./Child1";
+import ForceLayout from "./ForceLayout";
 
 class App extends Component {
   constructor(props) {
@@ -11,8 +11,9 @@ class App extends Component {
     };
   }
 
-  set_data = (csv_data) => {
-    this.setState({ data: csv_data });
+  set_data = (json_data) => {
+    this.setState({ data: json_data });
+    console.log(json_data)
   }
 
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
       <div>
         <FileUpload set_data={this.set_data}></FileUpload>
         <div className="parent">
-          <Child1 csv_data={this.state.data}></Child1>
+          <ForceLayout data={this.state.data}></ForceLayout>
         </div>
       </div>
     );

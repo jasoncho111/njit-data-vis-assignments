@@ -16,8 +16,7 @@ class FileUpload extends Component {
     if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
-        const text = e.target.result;
-        const json = this.csvToJson(text);
+        const json = JSON.parse(e.target.result)
         this.setState({ jsonData: json });  // Set JSON to state
         this.props.set_data(json)
       };
@@ -25,46 +24,13 @@ class FileUpload extends Component {
     }
   };
 
-  csvToJson = (csv) => {
-    const lines = csv.split("\n");  // Split by new line to get rows
-    const headers = lines[0].split(","); // Split first row to get headers
-    const result = [];
-
-    for (let i = 1; i < lines.length; i++) {
-      const currentLine = lines[i].split(","); // Split each line by comma
-      const obj = {};
-
-      // Map each column value to the corresponding header
-      headers.forEach((header, index) => {
-        obj[header.trim()] = currentLine[index]?.trim(); // Trim to remove spaces
-      });
-
-      // Add object to result if it's not an empty row
-      if (Object.keys(obj).length && lines[i].trim()) {
-        const parsedObj = {
-          Date: (() => {
-            const [month, day, year] = obj.Date.split("/").map(Number);
-            return new Date(year, month - 1, day); // month is 0-based
-          })(),
-          "GPT-4": parseInt(obj["GPT-4"]),
-          Gemini: parseInt(obj.Gemini),
-          "PaLM-2": parseFloat(obj["PaLM-2"]),
-          Claude: parseFloat(obj.Claude),
-          "LLaMA-3.1": parseFloat(obj["LLaMA-3.1"]),
-        };
-        result.push(parsedObj);
-      }
-    }
-
-    return result;
-  };
 
   render() {
     return (
       <div style={{ backgroundColor: "#f0f0f0", padding: 20 }}>
-        <h2>Upload a CSV File</h2>
+        <h2>Upload a JSON File</h2>
         <form onSubmit={this.handleFileSubmit}>
-          <input type="file" accept=".csv" onChange={(event) => this.setState({ file: event.target.files[0] })} />
+          <input type="file" accept=".json" onChange={(event) => this.setState({ file: event.target.files[0] })} />
           <button type="submit">Upload</button>
         </form>
       </div>
